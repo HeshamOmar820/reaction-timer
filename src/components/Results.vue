@@ -14,7 +14,7 @@ export default {
     mounted() {
         if (this.score < 250 ){
             this.rank= '🚀🚀سريع فشخخخ'
-        }else if (this.score < 800 ){
+        }else if (this.score < 600 ){
             this.rank= '👍🏻يجي منك'
         } else {
             this.rank= '🐌بطئ فشخخخ'
