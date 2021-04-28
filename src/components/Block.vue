@@ -1,6 +1,6 @@
 <template>
     <div class="block" v-if="showBlock" @click="stopTimer">
-        Click me
+        دوس هنا بسرعهههه
     </div>
 </template>
 

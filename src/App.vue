@@ -1,6 +1,6 @@
 <template>
-  <h1>Ninja Reaction Timer</h1>
-  <button @click="start" :disabled="isPlaying">Play</button>
+  <h1>شوف سرعه رد فعلك</h1>
+  <button @click="start" :disabled="isPlaying">يلا بينا</button>
   <Block v-if="isPlaying" :delay="delay" @end="endGame"/>
   <Results v-if="showResults" :score="score"/>
 </template>
@@ -35,12 +35,29 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #444;
-  margin-top: 60px;
-}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #444;
+    margin-top: 60px;
+  }
+  button{
+    background: #0faf87;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 10px;
+    outline: none;
+    font-weight: bold;
+  }
+  button[disabled]{
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
 </style>
